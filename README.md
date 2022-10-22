@@ -15,12 +15,8 @@ MacOS:
 --VST3:/Library/Audio/Plug-Ins/VST3  
 --AU:/Library/Audio/Plug-Ins/Components  
 
-## Usage
-Load the plugin on your DAW or run the standalone app.  
-Setting the Uid by clicking the button in the top right corner or pressing Return.  
-<img src="img/setting.png" alt="setting" width="300">
-
 ## Screenshots
+
 VST3:  
 <img src="img/vst3.png" alt="vst3" width="300">  
 AU:  
@@ -28,5 +24,12 @@ AU:
 Standalone:  
 <img src="img/standalone.png" alt="standalone" width="300">  
 
+## Usage
+
+Load the plugin on your DAW or run the standalone app.  
+Setting the Uid by clicking the button in the top right corner or pressing Return.  
+<img src="img/setting.png" alt="setting" width="300">  
+
 ## License
+
 [GPL](https://choosealicense.com/licenses/gpl-3.0/)
