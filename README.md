@@ -17,7 +17,7 @@ MacOS:
 
 ## Usage
 Load the plugin on your DAW or run the standalone app.  
-Setting the Uid by click the button in the top right corner or press Return.  
+Setting the Uid by clicking the button in the top right corner or pressing Return.  
 <img src="img/setting.png" alt="setting" width="300">
 
 ## Screenshots
