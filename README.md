@@ -18,15 +18,15 @@ MacOS:
 ## Usage
 Load the plugin on your DAW or run the standalone app.  
 Setting the Uid by click the button in the top right corner or press Return.  
-<img src="https://github.com/yukinsnow/ELAINA/blob/main/screenshot.png" alt="setting">
+<img src="https://github.com/yukinsnow/ELAINA/blob/img/setting.png" alt="setting">
 
 ## Screenshots
 VST3:  
-<img src="https://github.com/yukinsnow/ELAINA/blob/main/screenshot.png" alt="vst3">
+<img src="https://github.com/yukinsnow/ELAINA/blob/img/vst3.png" alt="vst3">
 AU:  
-<img src="https://github.com/yukinsnow/ELAINA/blob/main/screenshot.png" alt="au">
+<img src="https://github.com/yukinsnow/ELAINA/blob/img/au.png" alt="au">
 Standalone:  
-<img src="https://github.com/yukinsnow/ELAINA/blob/main/screenshot.png" alt="standalone">
+<img src="https://github.com/yukinsnow/ELAINA/blob/img/standalone.png" alt="standalone">
 
 ## License
 [GPL](https://choosealicense.com/licenses/gpl-3.0/)
