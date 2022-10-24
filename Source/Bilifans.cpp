@@ -97,6 +97,10 @@ void curlfunc(int mid)
 tuple<string, int, string> Bilifans(int mid)
 {
     tuple<string, int, string> result;
+    //Bug fixed: curl will crash with input 0.
+    if (mid == 0) {
+        mid = 36081646;
+    }
     curlfunc(mid);
     return make_tuple(name, fans, face);
 }

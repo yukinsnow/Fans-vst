@@ -1,4 +1,4 @@
-/*
+﻿/*
   ==============================================================================
 
     @yukinsnow
@@ -58,6 +58,11 @@ FansAudioProcessorEditor::FansAudioProcessorEditor (FansAudioProcessor& p)
     // Use the light theme.
     look.setColourScheme(juce::LookAndFeel_V4::getLightColourScheme());
     getLookAndFeel().setDefaultLookAndFeel(&look);
+
+    //set default font to avoid problem when building on Windows
+    //Microsoft YaHei UI are licensed to use for all Windows softwares
+    if(JUCE_WINDOWS==1)
+        getLookAndFeel().setDefaultSansSerifTypefaceName("Microsoft YaHei UI");
 
     // Load components and make them visible.
     addAndMakeVisible(name);
@@ -126,15 +131,16 @@ void FansAudioProcessorEditor::setLabel(int mid)
     int bilifans;
     string biliface;
     tie(biliname, bilifans, biliface) = result;
+
     
     // Convert url from http to https.
     if(biliface.substr(0,5) != "https")
         biliface = "https" + biliface.substr(4,-1);
-    name.setText("昵称：" + biliname, juce::dontSendNotification);
-    fans.setText("粉丝数：" + to_string(bilifans), juce::dontSendNotification);
+    name.setText(juce::CharPointer_UTF8("\xe7\x94\xa8\xe6\x88\xb7\xe5\x90\x8d\xef\xbc\x9a") + biliname, juce::dontSendNotification);
+    fans.setText(juce::CharPointer_UTF8("\xe7\xb2\x89\xe4\xb8\x9d\xe6\x95\xb0\xef\xbc\x9a") + to_string(bilifans), juce::dontSendNotification);
 
     // Download the bili's head and store to memory.
-    juce::URL imageLink(biliface);
+    juce::URL imageLink(biliface+"@1c.png"); //force .png to avoid problem 
             juce::MemoryBlock memoryBlock;
             if(imageLink.readEntireBinaryStream(memoryBlock))
             {

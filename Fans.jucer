@@ -3,7 +3,7 @@
 <JUCERPROJECT id="quScgb" name="Fans" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
               companyName="Sodatune" companyWebsite="sodatune.com" companyEmail="yukinsnow@gmail.com"
-              bundleIdentifier="com.sodatune.fans" headerPath="/opt/homebrew/opt/curl/include/&#10;/opt/homebrew/opt/nlohmann-json/include/"
+              bundleIdentifier="com.sodatune.fans" headerPath="/opt/homebrew/opt/curl/include/&#10;/opt/homebrew/opt/nlohmann-json/include/&#10;.\ext_libs\curl_x64-windows\include&#10;.\ext_libs\nlohmann-json_x64-windows\include&#10;"
               splashScreenColour="Light">
   <MAINGROUP id="SK9rRU" name="Fans">
     <GROUP id="{89CD371F-15E5-1AC5-9B64-516BA6068D5F}" name="Source">
@@ -40,6 +40,26 @@
         <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../juce"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../juce"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce"/>
+        <MODULEPATH id="juce_audio_utils" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+      </MODULEPATHS>
+    </VS2019>
   </EXPORTFORMATS>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
