@@ -23,7 +23,7 @@
     <XCODE_MAC targetFolder="Builds/MacOSX">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="Fans"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="Fans"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Fans" libraryPath="ext_libs/"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>

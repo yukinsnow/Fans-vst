@@ -1,4 +1,4 @@
-﻿/*
+/*
   ==============================================================================
 
     @yukinsnow
@@ -61,7 +61,7 @@ FansAudioProcessorEditor::FansAudioProcessorEditor (FansAudioProcessor& p)
 
     //set default font to avoid problem when building on Windows
     //Microsoft YaHei UI are licensed to use for all Windows softwares
-    if(JUCE_WINDOWS==1)
+    if(juce::SystemStats::getOperatingSystemName() == "Windows")
         getLookAndFeel().setDefaultSansSerifTypefaceName("Microsoft YaHei UI");
 
     // Load components and make them visible.
