@@ -10,9 +10,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fans - VST3", "Fans_VST3.vcxproj", "{B7E6F87D-B91E-C865-1C0F-0E94D40B09AF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{239FB2C4-1D83-51A7-E1E9-522311D43928} = {239FB2C4-1D83-51A7-E1E9-522311D43928}
+		{FA7E7687-BD6F-C181-5536-667558B696C2} = {FA7E7687-BD6F-C181-5536-667558B696C2}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fans - Shared Code", "Fans_SharedCode.vcxproj", "{239FB2C4-1D83-51A7-E1E9-522311D43928}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fans - VST3 Manifest Helper", "Fans_VST3ManifestHelper.vcxproj", "{FA7E7687-BD6F-C181-5536-667558B696C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +35,10 @@ Global
 		{239FB2C4-1D83-51A7-E1E9-522311D43928}.Debug|x64.Build.0 = Debug|x64
 		{239FB2C4-1D83-51A7-E1E9-522311D43928}.Release|x64.ActiveCfg = Release|x64
 		{239FB2C4-1D83-51A7-E1E9-522311D43928}.Release|x64.Build.0 = Release|x64
+		{FA7E7687-BD6F-C181-5536-667558B696C2}.Debug|x64.ActiveCfg = Debug|x64
+		{FA7E7687-BD6F-C181-5536-667558B696C2}.Debug|x64.Build.0 = Debug|x64
+		{FA7E7687-BD6F-C181-5536-667558B696C2}.Release|x64.ActiveCfg = Release|x64
+		{FA7E7687-BD6F-C181-5536-667558B696C2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

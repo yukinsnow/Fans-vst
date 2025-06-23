@@ -5,6 +5,14 @@
 * Provide VST3 plugin, Audio unit and standalone application.  
 * Support Windows(x64) and MacOS(Universe).  
 
+## Build
+Open Fans.jucer with Projucer
+External libraries:
+
+​								[json](https://github.com/nlohmann/json.git)
+
+​								[libcurl](https://github.com/commontk/libcurl.git)
+
 ## Installation
 
 Download the released package.  

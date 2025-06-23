@@ -6,7 +6,7 @@
 
   ==============================================================================
 */
-
+#define CURL_STATICLIB
 #include <iostream>
 #include <memory>
 #include <curl/curl.h>
@@ -14,9 +14,13 @@
 #include <string>
 
 //Here is the setting for static libary build on windows. MacOS no need.
-//#pragma comment(lib, "Ws2_32.Lib")
-//#pragma comment(lib, "Wldap32.Lib")
-//#pragma comment(lib, "Crypt32.Lib")
+#pragma comment(lib, "Ws2_32.Lib")
+#pragma comment(lib, "Wldap32.Lib")
+#pragma comment(lib, "Crypt32.Lib")
+
+#pragma comment(lib, "zlib.Lib")
+#pragma comment(lib, "libcurl.lib")
+
 
 using std::cin;
 using std::cout;
@@ -44,7 +48,7 @@ string face;
 void curlfunc(int mid)
 {
 
-    string url("http://api.bilibili.com/x/web-interface/card?mid=");
+    string url("https://api.bilibili.com/x/web-interface/card?mid=");
     url.append(to_string(mid));
     string faceurl = "";
 
@@ -59,6 +63,10 @@ void curlfunc(int mid)
 
     // Follow HTTP redirects if necessary.
     curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
+
+
+    //Set HTTP proxy
+    curl_easy_setopt(curl, CURLOPT_PROXY, "http://127.0.0.1:7890"); 
 
     // Response information.
     long httpCode(0);
